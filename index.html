@@ -1,89 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UI Assignment – SYMB Technologies</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - SYMB Assignment</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">SYMB Technologies</div>
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#signup">Sign Up</a>
-      </nav>
-    </div>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Build Beautiful Web Interfaces</h1>
-        <p>Create responsive and clean UI designs for modern web applications.</p>
-        <a href="#signup" class="btn-primary">Get Started</a>
-      </div>
-      <div class="hero-form" id="signup">
+    <!-- Header Section -->
+    <header>
+        <div class="logo">FLATTY</div>
+        <div class="login">Already a member?</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Make your landing page<br>look really good.</h1>
+            <div class="email-box">
+                <input type="text" placeholder="Enter your email address">
+                <button>Invite Me!</button>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="mobile">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Your Landing Page<br>Looks Wonderful Now.</h2>
+        <p>Landing pages help businesses communicate value better with clean UI and structured layout.</p>
+
+        <div class="features">
+            <div class="feature-box">
+                <i class="fa-solid fa-globe"></i>
+                <h4>Browser Friendly</h4>
+                <p>Fully responsive layout that adapts to any browser and screen size.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <h4>Email Campaigns</h4>
+                <p>Designed to integrate with email workflow and marketing automation.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-bookmark"></i>
+                <h4>Save Notes</h4>
+                <p>Organize your workflow using saved notes and quick access tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="subscribe">
+        <input type="text" placeholder="Enter your email address">
+        <button>Invite Me!</button>
+    </div>
+
+    <!-- Device Section -->
+    <section class="device">
+        <h2>Flatty is for Everyone.</h2>
+        <p>A clean mobile-friendly interface that provides a better user experience.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="phone-img" alt="phone">
+    </section>
+
+    <div class="subscribe">
+        <input type="text" placeholder="Enter your email address">
+        <button>Invite Me!</button>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team">
+        <h2>Our Awesome Team.<br>Design Lovers.</h2>
+        <p>Meet the creative team behind the design and development of this project.</p>
+
+        <div class="team-members">
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="">
+                <h4>Aditya Rao</h4>
+                <p>UI/UX Designer passionate about clean minimal UI experiences.</p>
+                <div class="social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
+                <h4>Rohit Sharma</h4>
+                <p>Front-End Developer who loves building smooth interactive layouts.</p>
+                <div class="social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="">
+                <h4>Angelina Mathews</h4>
+                <p>Content Specialist helping brands communicate meaningfully.</p>
+                <div class="social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="subscribe">
+        <input type="text" placeholder="Enter your email address">
+        <button>Invite Me!</button>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        
         <form>
-          <h2>Join Our Community</h2>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-          <label for="role">Role</label>
-          <select id="role" name="role">
-            <option>Student</option>
-            <option>Intern</option>
-            <option>Professional</option>
-          </select>
-
-          <button type="submit" class="btn-primary">Submit</button>
-          <button type="reset" class="btn-secondary">Reset</button>
-
-          <p class="small">This form is for demo purposes only.</p>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message"></textarea>
+            <button>Send Message</button>
         </form>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="features" class="features">
-    <div class="container">
-      <h2>Why Choose Us</h2>
-      <div class="feature-cards">
-        <div class="card">
-          <h3>Responsive Design</h3>
-          <p>Looks great on any device — desktop, tablet or mobile.</p>
-        </div>
-        <div class="card">
-          <h3>Clean Code</h3>
-          <p>Well-structured HTML and CSS for easy customization.</p>
-        </div>
-        <div class="card">
-          <h3>Fast Development</h3>
-          <p>Get up and running quickly with minimal setup.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> SYMB Technologies. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.querySelector('.hero-form form').addEventListener('submit', function(e){
-      e.preventDefault();
-      alert('Form submitted! (Demo only)');
-    });
-  </script>
 </body>
 </html>
