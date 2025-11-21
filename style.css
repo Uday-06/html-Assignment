@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-bottom: 1px solid lightgray;
+}
+
+nav a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.hero .left{
+    width: 50%;
+}
+
+.hero button{
+    padding: 10px 18px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.right{
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select{
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.submit-btn{
+    margin-top: 5px;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border-radius: 5px;
+}
+
+#features{
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.feature-box .box{
+    background: white;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px lightgray;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    margin-top: 30px;
+}
